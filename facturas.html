@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facturas</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="javascript/fuction.js"></script>
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <div class="navbar ">
+        <img src="img/logo.png" alt="Logo VetCare"> <!-- Reemplaza 'logo.png' por la ruta de tu logo -->
+        <nav class="nav-center">
+            <a href="inicio.html">Inicio</a>
+            <a href="veterinario.html">Equipo Veterinario</a>
+            <a href="turnos.html">Gestión de Turnos</a>
+            <a href="pacientes.html">Gestión de Pacientes</a>
+            <a href="facturas.html">Facturación</a>
+            <a href="recetas.html">Recetas</a>
+            <a href="atencion.html">Atención Médica</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </div>
+    
+    <!-- Facturación -->
+    <div id="facturas" class="container">
+        <div class="card">
+            <h2>Registro y Extensión de Facturas</h2>
+            <form onsubmit="generateInvoice(event)">
+                <div class="form-group">
+                    <label for="factura-paciente">Nombre del Paciente:</label>
+                    <input type="text" id="factura-paciente" placeholder="Nombre de la mascota">
+                </div>
+                <div class="form-group">
+                    <label for="monto-factura">Monto:</label>
+                    <input type="number" id="monto-factura" placeholder="Monto en pesos">
+                </div>
+                <div class="form-group">
+                    <button type="submit">Generar Factura</button>
+                </div>
+            </form>
+            <div class="output" id="invoiceOutput"></div>
+        </div>
+    </div>
+</body>
+</html>

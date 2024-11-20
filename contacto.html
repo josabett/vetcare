@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="javascript/fuction.js"></script>
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <div class="navbar ">
+        <img src="img/logo.png" alt="Logo VetCare"> <!-- Reemplaza 'logo.png' por la ruta de tu logo -->
+        <nav class="nav-center">
+            <a href="inicio.html">Inicio</a>
+            <a href="veterinario.html">Equipo Veterinario</a>
+            <a href="turnos.html">Gestión de Turnos</a>
+            <a href="pacientes.html">Gestión de Pacientes</a>
+            <a href="facturas.html">Facturación</a>
+            <a href="recetas.html">Recetas</a>
+            <a href="atencion.html">Atención Médica</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </div>
+    
+    <!-- Contacto -->
+    <div id="contacto" class="container">
+        <div class="card">
+            <h2>Contacto</h2>
+            <form onsubmit="submitContactForm(event)">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" placeholder="Tu nombre">
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" placeholder="Escribe tu mensaje aquí"></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Enviar Mensaje</button>
+                </div>
+            </form>
+            <div class="output" id="contactOutput"></div>
+        </div>
+    </div>
+</body>
+</html>
